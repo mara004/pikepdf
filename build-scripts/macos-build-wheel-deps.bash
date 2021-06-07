@@ -3,7 +3,7 @@ set -ex
 
 if [ ! -f /usr/local/lib/libz.a ]; then
     pushd zlib
-    patch --ignore-whitespace << 'EOF'
+    patch --ignore-whitespace --unified << 'EOF'
 --- zlib-1.2.11/configure	2016-12-31 10:06:40.000000000 -0800
 +++ zlib/configure	2021-05-31 01:13:39.000000000 -0700
 @@ -186,6 +186,7 @@

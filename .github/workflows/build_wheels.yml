@@ -61,7 +61,7 @@ jobs:
   #         path: ./wheelhouse/*.whl
 
   wheels_macos_arm:
-    name: 🏗 ${{ matrix.os }}
+    name: 🏗 ${{ matrix.os }} - Apple Silicon
     runs-on: ${{ matrix.os }}
     env:
       CIBW_SKIP: "cp27-* cp35-* cp36-* cp37-* cp38-* pp2*"
