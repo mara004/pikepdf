@@ -85,7 +85,7 @@ jobs:
       - name: Build wheels
         uses: joerick/cibuildwheel@v1.11.1
         env:
-          CIBW_ARCHS_MACOS: universal2 # for Apple Silicon
+          CIBW_ARCHS_MACOS: x86_64 universal2 # for Apple Silicon
 
       - uses: actions/upload-artifact@v2
         with:
