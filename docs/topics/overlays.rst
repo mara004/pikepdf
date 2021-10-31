@@ -60,5 +60,5 @@ and then delete the slides.
 By default, ``add_overlay`` encapsulates the existing content stream in a way
 that ensures the transformation matrix is first reset, since this behavior
 aligns with user expectations. This adds a ``q/Q`` pair to (push/pop graphics
-stack) to existing content streams. To disable this (usually) behavior use
+stack) to existing content streams. To disable this (usually wanted) behavior use
 ``push_stack=False``.
